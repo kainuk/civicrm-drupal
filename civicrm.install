@@ -130,6 +130,7 @@ function _civicrm_find_civicrm() {
   }
   $possible_paths[] = 'vendor/civicrm/civicrm-core';
   $possible_paths[] = '../vendor/civicrm/civicrm-core';
+  $possible_paths[] = 'libraries/civicrm';
 
   foreach ($possible_paths as $path) {
     if (file_exists($path . '/CRM/Core/ClassLoader.php')) {
